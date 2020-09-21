@@ -1,3 +1,6 @@
 [submodule "zplug"]
 	path = zplug
 	url = https://github.com/zplug/zplug
+[submodule "vim/pack/rhg135/start/YouCompleteMe"]
+	path = vim/pack/rhg135/start/YouCompleteMe
+	url = https://github.com/ycm-core/YouCompleteMe

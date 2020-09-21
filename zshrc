@@ -19,6 +19,7 @@ zplug "zplug/zplug", hook-build:"zplug --self-manage"
 export HISTFILE=~/.zsh_history HISTSIZE=1000 SAVEHIST=1000
 setopt INC_APPEND_HISTORY
 path=(~/.local/bin ~/winhome/bin $path)
+export DISPLAY=$(</etc/resolv.conf tail -1 | cut -d ' ' -f 2):0.0
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
